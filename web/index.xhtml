@@ -9,18 +9,18 @@
     <h:body>
         <p:fieldset>
             <h:form id="form">
-                <p:dataTable var="car" value="#{tableBean1.carList}" id="carsTable" rowKey="#{car1.model}" >
+                <p:dataTable var="car" value="#{tableBean1.carList}" id="carsTable" rowKey="#{car.model}" >
                     <p:column headerText="Model" id="model">
-                        #{car1.model}
+                        #{car.model}
                     </p:column>
                     <p:column headerText="Manufacturer" id="manufacturer">
-                        #{car1.manufacturer}
+                        #{car.manufacturer}
                     </p:column>
                     <p:column headerText="Year" id="year">
-                        #{car1.year}
+                        #{car.year}
                     </p:column>
                     <p:column headerText="Color" id="color">
-                        #{car1.color}
+                        #{car.color}
                     </p:column>
                 </p:dataTable>
             </h:form>
